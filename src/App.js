@@ -1,10 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 
-import { BrowserRouter,  Link,  Route, Routes } from 'react-router-dom'
-import { Test } from './Test';
 import { useCallback, useEffect, useState } from 'react';
-import { Count } from './Count';
+import TextEditor from './TextEditor';
 
 function App() {
 
@@ -23,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <input type='text'></input>
+{/*       <input type='text'></input>
       <div style={{display: 'flex'}}>
         <ul>
           <li>1</li>
@@ -57,7 +54,14 @@ function App() {
 
         <Test handleSetCount={handleSetCount} />
 
-      </div>
+      </div> */}
+
+        {/* <div contentEditable dataTooltip="Consider using 'an' instead of 'a'">
+          <span>sdfdsf</span>
+          </div> */}
+
+          <TextEditor/>
+
     </div>
   );
 }

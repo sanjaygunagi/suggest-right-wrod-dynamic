@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String Array as Individual Words</title>
+</head>
+<body>
+
+<!-- An empty div element with an id to target it with JavaScript -->
+<div id="wordContainer"></div>
+
+<script>
+  // Example array of strings
+  var stringArray = ["This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings.", "This", "is", "an", "example", "array", "of", "strings."];
+
+  // Create a span element for each word and join them
+  var wordElements = stringArray.map(function(word) {
+    return '<span>' + word + '</span>';
+  });
+
+  // Set the content of the div
+  document.getElementById('wordContainer').innerHTML = wordElements.join(' ');
+</script>
+
+</body>
+</html>
